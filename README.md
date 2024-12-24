@@ -79,6 +79,34 @@ To run this project locally, ensure you have the following tools installed:
    dotnet ef database update
    ```
 
+### Open and Run the Project in Visual Studio (VS)
+
+1. Open **Visual Studio** (preferably version 2022 or later).
+2. Select **Open a Project/Solution** and navigate to the folder where you cloned the project (`ECommerceAPI`).
+3. Open the `ECommerceAPI.sln` solution file.
+4. Once the project is loaded, press `Ctrl + F5` to build and run the API.
+5. The API will run locally, and you can access Swagger UI at `https://localhost:5001/swagger`.
+
+### Open and Run the Project in Visual Studio Code (VS Code)
+
+1. Install the necessary extensions in **VS Code**:
+   - **C#** extension from Microsoft (for syntax highlighting, IntelliSense, etc.).
+   - **C# .NET Core** extension (for debugging and running .NET projects).
+   
+2. Open **Visual Studio Code**.
+3. Select **Open Folder** and navigate to the project folder (`ECommerceAPI`).
+4. Press `Ctrl + ` (backtick) to open the terminal and run the following commands:
+   - Restore dependencies:
+     ```bash
+     dotnet restore
+     ```
+   - Run the application:
+     ```bash
+     dotnet run
+     ```
+5. The API will be accessible at `https://localhost:5001` or `http://localhost:5000`.
+6. Open Swagger UI by navigating to `https://localhost:5001/swagger` in your browser to test the API endpoints.
+
 ### API Endpoints
 
 The following are the key API endpoints for the application:
@@ -114,16 +142,10 @@ If you'd like to contribute to this project, please fork the repository, make yo
 4. Push to the branch (`git push origin feature-branch`).
 5. Create a new pull request.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
 - Thanks to the community for their open-source contributions.
 - [Microsoft](https://dotnet.microsoft.com/) for creating **ASP.NET Core**.
 - [Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/) for easy ORM database management.
-```
-
-  
 
