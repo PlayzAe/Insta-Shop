@@ -26,7 +26,7 @@ This is an E-commerce API built with **ASP.NET Core** and **Entity Framework** f
 
 To run this project locally, ensure you have the following tools installed:
 
-- [.NET SDK](https://dotnet.microsoft.com/download) (version 6.0 or above)
+- [.NET SDK](https://dotnet.microsoft.com/download) (version 6.0 or above but I used version 8.0)
 - [SQL Server](https://www.microsoft.com/en-us/sql-server) or [SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 - [Postman](https://www.postman.com/) (for testing API endpoints)
 
@@ -125,10 +125,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/) for easy ORM database management.
 ```
 
-### Key Points to Note:
-- **Getting Started Section**: Describes the steps to clone the project, set up the database, and run the application.
-- **API Endpoints Section**: Lists key API routes, including those for managing products, orders, and user authentication.
-- **Contributing Section**: Describes the steps for contributing, for those interested in making contributions to the project.
-- **License Section**: Mentions the license type for the project (MIT in this case).
   
 
