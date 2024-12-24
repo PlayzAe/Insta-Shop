@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-// E-Commerce database setup using the connection string from appsettings.json
+// E-Commerce database setup using the connection string from my appsettings.json
 builder.Services.AddDbContext<ECommerceDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
@@ -21,7 +21,7 @@ builder.Services.AddAuthentication("Bearer")
     {
         string? secretKey = builder.Configuration["JwtSettings:SecretKey"];
 
-        // Ensure SecretKey is provided in the configuration
+        // Ensure SecretKey is provided in my configuration
         if (string.IsNullOrEmpty(secretKey))
         {
             throw new InvalidOperationException("JWT Secret Key is not configured properly.");

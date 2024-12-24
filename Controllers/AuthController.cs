@@ -53,7 +53,7 @@ namespace ECommerceAPI.Controllers
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
-            // Remove the expiry duration logic since you don't want the token to expire
+            // To ensure my token doesn't expire so the user can login anytime after registeration 
             var token = new JwtSecurityToken(
                 issuer: _configuration["JwtSettings:ValidIssuer"],
                 audience: _configuration["JwtSettings:ValidAudience"],
