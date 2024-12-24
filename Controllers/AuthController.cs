@@ -6,6 +6,7 @@ using System.Text;
 using Microsoft.Extensions.Configuration;
 using BCrypt.Net;
 using ECommerceAPI.Models;
+using System.Linq;
 
 namespace ECommerceAPI.Controllers
 {
@@ -26,6 +27,7 @@ namespace ECommerceAPI.Controllers
             _configuration = configuration;
         }
 
+        // Login endpoint
         [HttpPost("login")]
         public IActionResult Login([FromBody] LoginModel model)
         {
@@ -38,9 +40,9 @@ namespace ECommerceAPI.Controllers
 
             var claims = new[]
             {
-                new Claim(ClaimTypes.Name, user.Username ?? "defaultUsername"), // Provide a default value if null
-                new Claim(ClaimTypes.NameIdentifier, user.Username ?? "defaultUsername") // Provide a default value if null
-            };
+        new Claim(ClaimTypes.Name, user.Username ?? "defaultUsername"),
+        new Claim(ClaimTypes.NameIdentifier, user.Username ?? "defaultUsername")
+    };
 
             var secretKey = _configuration["JwtSettings:SecretKey"];
             if (string.IsNullOrEmpty(secretKey))
@@ -51,17 +53,12 @@ namespace ECommerceAPI.Controllers
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
-            var expiryDurationStr = _configuration["JwtSettings:ExpiryDuration"];
-            if (string.IsNullOrEmpty(expiryDurationStr) || !int.TryParse(expiryDurationStr, out int expiryDuration))
-            {
-                throw new Exception("Invalid or missing expiry duration in JWT settings.");
-            }
-
+            // Remove the expiry duration logic since you don't want the token to expire
             var token = new JwtSecurityToken(
                 issuer: _configuration["JwtSettings:ValidIssuer"],
                 audience: _configuration["JwtSettings:ValidAudience"],
                 claims: claims,
-                expires: DateTime.Now.AddMinutes(expiryDuration),
+                expires: null,  // Token does not expire
                 signingCredentials: creds
             );
 
@@ -70,14 +67,48 @@ namespace ECommerceAPI.Controllers
                 token = new JwtSecurityTokenHandler().WriteToken(token)
             });
         }
+
+        // Register endpoint
+        [HttpPost("register")]
+        public IActionResult Register([FromBody] RegisterModel model)
+        {
+            // Check if the user already exists
+            if (Users.Any(u => u.Username == model.Username))
+            {
+                return Conflict(new { Message = "Username already exists" });
+            }
+
+            // Hash the password
+            var hashedPassword = BCrypt.Net.BCrypt.HashPassword(model.Password);
+
+            // Add the new user
+            var newUser = new User
+            {
+                Username = model.Username,
+                PasswordHash = hashedPassword
+            };
+
+            Users.Add(newUser);
+
+            return CreatedAtAction(nameof(Login), new { username = model.Username }, new { Message = "User registered successfully" });
+        }
     }
 
+    // Login model
     public class LoginModel
     {
         public string? Username { get; set; }
         public string? Password { get; set; }
     }
 
+    // Register model
+    public class RegisterModel
+    {
+        public string? Username { get; set; }
+        public string? Password { get; set; }
+    }
+
+    // User model
     public class User
     {
         public string? Username { get; set; }

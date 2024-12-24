@@ -3,12 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Moses\\Desktop\\Coding\\Projects\\C#\\E-commerce\\ECommerceAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5F991996-56FA-475C-9007-AFE2B7411AE6}|ECommerceAPI.csproj|c:\\users\\moses\\desktop\\coding\\projects\\c#\\e-commerce\\ecommerceapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5F991996-56FA-475C-9007-AFE2B7411AE6}|ECommerceAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5F991996-56FA-475C-9007-AFE2B7411AE6}|ECommerceAPI.csproj|c:\\users\\moses\\desktop\\coding\\projects\\c#\\e-commerce\\ecommerceapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F991996-56FA-475C-9007-AFE2B7411AE6}|ECommerceAPI.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5F991996-56FA-475C-9007-AFE2B7411AE6}|ECommerceAPI.csproj|c:\\users\\moses\\desktop\\coding\\projects\\c#\\e-commerce\\ecommerceapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F991996-56FA-475C-9007-AFE2B7411AE6}|ECommerceAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5F991996-56FA-475C-9007-AFE2B7411AE6}|ECommerceAPI.csproj|c:\\users\\moses\\desktop\\coding\\projects\\c#\\e-commerce\\ecommerceapi\\data\\ecommercedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F991996-56FA-475C-9007-AFE2B7411AE6}|ECommerceAPI.csproj|solutionrelative:data\\ecommercedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Moses\\Desktop\\Coding\\Projects\\C#\\E-commerce\\ECommerceAPI\\Migrations\\20241224010024_ForthMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241224010024_ForthMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Moses\\Desktop\\Coding\\Projects\\C#\\E-commerce\\ECommerceAPI\\Migrations\\20241224005841_ThirdMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241224005841_ThirdMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F991996-56FA-475C-9007-AFE2B7411AE6}|ECommerceAPI.csproj|c:\\users\\moses\\desktop\\coding\\projects\\c#\\e-commerce\\ecommerceapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F991996-56FA-475C-9007-AFE2B7411AE6}|ECommerceAPI.csproj|solutionrelative:controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F991996-56FA-475C-9007-AFE2B7411AE6}|ECommerceAPI.csproj|c:\\users\\moses\\desktop\\coding\\projects\\c#\\e-commerce\\ecommerceapi\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F991996-56FA-475C-9007-AFE2B7411AE6}|ECommerceAPI.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,29 +42,108 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Moses\\Desktop\\Coding\\Projects\\C#\\E-commerce\\ECommerceAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Moses\\Desktop\\Coding\\Projects\\C#\\E-commerce\\ECommerceAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-24T01:01:08.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Moses\\Desktop\\Coding\\Projects\\C#\\E-commerce\\ECommerceAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Moses\\Desktop\\Coding\\Projects\\C#\\E-commerce\\ECommerceAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAQwCcAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T01:01:03.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20241224010024_ForthMigration.cs",
+              "DocumentMoniker": "C:\\Users\\Moses\\Desktop\\Coding\\Projects\\C#\\E-commerce\\ECommerceAPI\\Migrations\\20241224010024_ForthMigration.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241224010024_ForthMigration.cs",
+              "ToolTip": "C:\\Users\\Moses\\Desktop\\Coding\\Projects\\C#\\E-commerce\\ECommerceAPI\\Migrations\\20241224010024_ForthMigration.cs",
+              "RelativeToolTip": "Migrations\\20241224010024_ForthMigration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T01:00:25.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20241224005841_ThirdMigration.cs",
+              "DocumentMoniker": "C:\\Users\\Moses\\Desktop\\Coding\\Projects\\C#\\E-commerce\\ECommerceAPI\\Migrations\\20241224005841_ThirdMigration.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241224005841_ThirdMigration.cs",
+              "ToolTip": "C:\\Users\\Moses\\Desktop\\Coding\\Projects\\C#\\E-commerce\\ECommerceAPI\\Migrations\\20241224005841_ThirdMigration.cs",
+              "RelativeToolTip": "Migrations\\20241224005841_ThirdMigration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T00:58:41.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Moses\\Desktop\\Coding\\Projects\\C#\\E-commerce\\ECommerceAPI\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Models\\Product.cs",
+              "ToolTip": "C:\\Users\\Moses\\Desktop\\Coding\\Projects\\C#\\E-commerce\\ECommerceAPI\\Models\\Product.cs",
+              "RelativeToolTip": "Models\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T00:53:43.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\Moses\\Desktop\\Coding\\Projects\\C#\\E-commerce\\ECommerceAPI\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\Moses\\Desktop\\Coding\\Projects\\C#\\E-commerce\\ECommerceAPI\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Controllers\\ProductsController.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAawEAAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T00:51:51.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ECommerceDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Moses\\Desktop\\Coding\\Projects\\C#\\E-commerce\\ECommerceAPI\\Data\\ECommerceDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ECommerceDbContext.cs",
               "ToolTip": "C:\\Users\\Moses\\Desktop\\Coding\\Projects\\C#\\E-commerce\\ECommerceAPI\\Data\\ECommerceDbContext.cs",
               "RelativeToolTip": "Data\\ECommerceDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAGAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAwwCIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T00:19:48.795Z"
+              "WhenOpened": "2024-12-24T00:19:48.795Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\Moses\\Desktop\\Coding\\Projects\\C#\\E-commerce\\ECommerceAPI\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\Moses\\Desktop\\Coding\\Projects\\C#\\E-commerce\\ECommerceAPI\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAowBEAAAApAAAA",
+              "ViewState": "AQIAADEAAAAAAAAAAAAIwEAAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-23T23:50:24.893Z",
               "EditorCaption": ""

@@ -1,24 +1,27 @@
 using ECommerceAPI.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.Extensions.Configuration;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-// E-Commerce database
+// E-Commerce database setup using the connection string from appsettings.json
 builder.Services.AddDbContext<ECommerceDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Add controllers
 builder.Services.AddControllers();
 
-// Authentication setup with JWT
+// Set up JWT Authentication
 builder.Services.AddAuthentication("Bearer")
     .AddJwtBearer(options =>
     {
         string? secretKey = builder.Configuration["JwtSettings:SecretKey"];
 
-        // Check if SecretKey is null or empty, and throw an exception if so
+        // Ensure SecretKey is provided in the configuration
         if (string.IsNullOrEmpty(secretKey))
         {
             throw new InvalidOperationException("JWT Secret Key is not configured properly.");
@@ -34,7 +37,18 @@ builder.Services.AddAuthentication("Bearer")
         };
     });
 
-// Configure Swagger
+// Set up CORS 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", builder =>
+    {
+        builder.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+    });
+});
+
+// Configure Swagger for API documentation
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -48,6 +62,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+// Enable CORS
+app.UseCors("AllowAll");
 
 app.UseAuthentication(); // Add authentication middleware
 app.UseAuthorization();  // Add authorization middleware
